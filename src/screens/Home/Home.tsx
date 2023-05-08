@@ -11,11 +11,11 @@ import { ArrowUpRight, Plus } from "phosphor-react-native";
 import { Highlight } from '@components/Highlight/Highlight';
 import { Button } from '@components/Button/Button';
 import { MealCard } from '@components/MealCard/MealCard';
+import { VirtualizedScrollView } from '@components/VirtualizedListComponent/VirtualizedListComponent';
 
 // STYLES
 import * as S from "./Home.styles";
 import theme from '@theme/index';
-import { VirtualizedScrollView } from '@components/VirtualizedListComponent/VirtualizedListComponent';
 
 export function Home() {
 

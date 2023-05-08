@@ -15,7 +15,7 @@ import {
 import { Loading } from "@components/Loading/Loading";
 
 // SCREENS
-import { Home } from "@screens/Home/Home";
+import { MainRoutes } from "@routes/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({ NunitoSans_400Regular, NunitoSans_700Bold });
@@ -27,7 +27,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <MainRoutes /> : <Loading />}
     </ThemeProvider>
   );
 }
