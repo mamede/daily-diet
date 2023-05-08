@@ -1,5 +1,6 @@
 import React from 'react';
 
+// STYLES
 import * as S from "./Loading.styles";
 
 export function Loading(){
