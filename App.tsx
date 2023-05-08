@@ -28,7 +28,6 @@ export default function App() {
         translucent
       />
       {fontsLoaded ? <Home /> : <Loading />}
-      <Loading />
     </ThemeProvider>
   );
 }
