@@ -1,9 +1,14 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+interface ContainerProps {
+  isLow?: boolean;
+};
+
+export const Container = styled.View<ContainerProps>`
   width: 100%;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme.colors.green.light};
+  background-color: ${({ theme, isLow }) => 
+    isLow ? theme.colors.red.light : theme.colors.green.light };
   margin-bottom: 40px;
 `;
 

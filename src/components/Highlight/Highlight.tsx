@@ -6,9 +6,12 @@ import * as S from "./Highlight.styles";
 // TYPES
 import { HighlightProps as Props } from './Highlight.types';
 
-export function Highlight({ title, subtitle, icon }: Props) {
+// TODO: isLow temporario, alterar depois.
+
+export function Highlight({ title, subtitle, icon, isLow }: Props) {
+
   return (
-    <S.Container>
+    <S.Container isLow={isLow}>
       <S.Content>
         {icon}
       </S.Content>

@@ -1,6 +1,6 @@
 import { Platform, StatusBar } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import styled, { css } from "styled-components/native";
+import styled from "styled-components/native";
 
 export const Container = styled(SafeAreaView)`
   padding: 24px;
@@ -33,16 +33,21 @@ export const Profile = styled.Image`
   height: 100%;
 `;
 
-export const NewMealContianer = styled.TouchableOpacity`
-
-`;
+export const NewMealContianer = styled.TouchableOpacity``;
 
 export const NewMealTitle = styled.Text`
   margin-bottom: 8px;
-  ${({ theme }) => 
-  css`
-    font-size: ${theme.fontSize.md}px;
-    font-family: ${theme.fontFamily.regular};
-    color: ${theme.colors.gray[100]};
-  `}
+  font-size: ${({ theme }) => theme.fontSize.md}px;
+  font-family: ${({ theme }) => theme.fontFamily.regular};
+  color: ${({ theme }) => theme.colors.gray[100]};
+`;
+
+export const MealListContainer = styled.View``;
+
+export const MealListTitle = styled.Text`
+  margin-bottom: 8px;
+  margin-top: 32px;
+  font-size: ${({ theme }) => theme.fontSize.md}px;
+  font-family: ${({ theme }) => theme.fontFamily.regular};
+  color: ${({ theme }) => theme.colors.gray[100]};
 `;
