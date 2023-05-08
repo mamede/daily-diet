@@ -4,14 +4,16 @@ import React from 'react'
 import logo from '@assets/Logo.png'
 
 // ICONS
-import { ArrowUpRight } from "phosphor-react-native";
+import { ArrowUpRight, Plus } from "phosphor-react-native";
 
 // COMPONENTS
 import { Highlight } from '@components/Highlight/Highlight';
+import { Button } from '@components/Button/Button';
 
 // STYLES
 import * as S from "./Home.styles";
 import theme from '@theme/index';
+import { Platform } from 'react-native';
 
 export function Home() {
 
@@ -34,10 +36,24 @@ export function Home() {
             weight='bold'
             style={{ marginRight: 8, marginTop: 8 }}
           />
-      }
+        }
       />
 
-      <S.Text>Hello Home page</S.Text>
+      <S.NewMealContianer>
+        <S.NewMealTitle>Refeições</S.NewMealTitle>
+        <Button 
+          title="Nova Refeição"
+          onPress={() => console.log('Nova Refeição')}
+          icon={
+            <Plus 
+              size={24}
+              color={theme.colors.white}
+              weight={Platform.OS === 'ios' ? 'bold' : 'regular'}
+              style={{ marginRight: 12 }}
+            />
+          }
+        />
+      </S.NewMealContianer>
     </S.Container>
   );
 }

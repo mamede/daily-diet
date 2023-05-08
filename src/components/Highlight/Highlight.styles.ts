@@ -1,9 +1,10 @@
-import styled, { css } from "styled-components/native";
+import styled from "styled-components/native";
 
 export const Container = styled.View`
   width: 100%;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.colors.green.light};
+  margin-bottom: 40px;
 `;
 
 export const Content = styled.View`
