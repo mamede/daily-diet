@@ -10,7 +10,7 @@ import { Stats } from "@screens/Stats/Stats";
 export function AppRoutes() {
   return (
     <Navigator 
-      initialRouteName="Stats" 
+      initialRouteName="AddMeal" 
       screenOptions={{ headerShown: false }}
     >
       <Screen 
